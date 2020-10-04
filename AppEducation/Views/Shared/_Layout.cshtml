@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>@ViewData["Title"] - WebEducation</title>
+    
+    @RenderSection("Head", required: false)
+
+
+
+</head>
+<body>
+
+    @RenderSection("Header", required: false)
+
+    @RenderSection("Login", required: false)
+
+    @RenderBody()
+
+    @RenderSection("Footer", required: false)
+   
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @RenderSection("Script", required: false)
+</body>
+</html>
