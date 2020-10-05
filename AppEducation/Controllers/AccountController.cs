@@ -36,7 +36,7 @@ namespace AppEducation.Controllers {
                 var UserSession = userRepository.GetUserByUserName(UserName);
                 HttpContext.Session.SetString("_Name", UserSession.UserName);
                 HttpContext.Session.SetString("_ID" , UserSession.Id.ToString());
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Create","Home");
             }
             else
             {
